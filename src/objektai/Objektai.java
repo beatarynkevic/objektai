@@ -27,29 +27,39 @@ public class Objektai {
 
 */
         
-        Puodukas p1 = new Puodukas();
-        p1.spalva = 'r';
-        p1.turis = 300;
-        p1.kiekis = 0;
+        Puodukas p1 = new Puodukas('Z', 300);
+//        p1.spalva = 'r';
+//        p1.turis = 300;
+//        p1.kiekis = 0;
+            p1.isgerk(-1000);
+//            System.out.println(p1.getKiekis());
         
-        Puodukas p2 = new Puodukas();
-        p2.spalva = 'b';
-        p2.turis = 150;
-        p2.kiekis = 0;
+        Puodukas p2 = new Puodukas('B', 150);
+//        p2.spalva = 'b';
+//        p2.turis = 150;
+//        p2.kiekis = 0;
         
         p1.ipilk(120); //puoduko klaseje ieskos metodu
         p1.isgerk(30);
-        p1.ipilk(500);
+        p2.ipilk(150);
         
         Puodukas p3 = p1; //nuoroda i puoduka
         
-        p3.kiekis = 120;
+        /*is isores nebegalima pakeisti kiekio arba turio reiksmiu,
+        nebent!!! per ipilk/isgerk metodus*/
         
-        System.out.println(p1.turis + " turis 1 puoduko");
-        System.out.println(p2.turis + " turis 2 puoduko");
+        System.out.println(p1.getTuris() + " turis 1 puoduko");
+        System.out.println(p2.getTuris() + " turis 2 puoduko");
         
-        System.out.println(p1.kiekis + " kiekis 1 puoduko");
-        System.out.println(p2.kiekis + " kiekis 2 puoduko");
+        System.out.println(p1.getKiekis() + " kiekis 1 puoduko");
+        System.out.println(p2.getKiekis() + " kiekis 2 puoduko");
+        System.out.println(p2.getPilnas());
+        
+        //Termosas
+//        Termosas t1 = new Termosas('b', 1000);
+// 
+//        System.out.println(t1.getTemp());
+//        System.out.println(t1.getTuris());
         
     }
     
