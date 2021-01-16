@@ -31,5 +31,14 @@ public class Termosas extends Puodukas {
         super.ipilk(kiek); //nurodymas, kad metodo 'ipilk' ieskoti auksciau stovincioje klaseje, tai yra Puodukas klasejes
         this.temp -= 5;
 }
+//    public String toString() {
+//        return "Mano termosas";
+//    }
+
+    @Override
+    public String toString() {
+        return "Termosas{" + "temp=" + temp + '}';
+    }
+    
     
 }

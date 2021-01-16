@@ -82,18 +82,37 @@ public class Objektai {
         
         Termosas t3 = new Termosas('g', 500);
         
-        Puodukas p5 = t3;
-        Object o  = t3; //kintamasis o rodo i objekta
+        System.out.println(t3);
         
-        if (o instanceof Puodukas) { //operatoriu 'instanceof' sako i ka rodo kintamasis o
-            System.out.println("Puodukas");
-        }
+//        Puodukas p5 = t3;
+//        Object o  = t3; //kintamasis o rodo i objekta
         
-        Object ob = null; //default reiksme. Kintamasis ob nerodo i joki objekta
-        
-        String a = "Labas pasauli";
-        a = a + " ar tikrai?";      //kintamasis a rodo i nauja objekta
-        System.out.println(a);
+//        if (o instanceof Puodukas) { //operatoriu 'instanceof' sako i ka rodo kintamasis o
+//            System.out.println("Puodukas");
+//        }
+//        
+//        Object ob = null; //default reiksme. Kintamasis ob nerodo i joki objekta
+//        
+//        String a = "Labas pasauli";
+//        a = a + " ar tikrai?";      //kintamasis a rodo i nauja objekta
+//        
+//        //Immutable
+//        if (a == "Labas pasauli ar tikrai?") { //ar rodo i ta pati objekta ==. Grazintu true jeigu fiziskai i ta pati objekta rodytu
+//            System.out.println("lygu");
+//        } else {
+//            System.out.println("nelygu");
+//        }
+//        System.out.println(a);
+//        
+//        //Cashable
+//        String ks = "lygu1";
+//        
+//        if (ks == "lygu1") {
+//            System.out.println("lygu");
+//        } else {
+//            System.out.println("nelygu");
+//        }
+//        
     }
     
           

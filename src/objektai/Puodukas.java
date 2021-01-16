@@ -56,4 +56,10 @@ public class Puodukas { //paveldetas nuo Object klases
             }
         }
 
+        @Override
+        public String toString() {
+            return "Puodukas{" + "spalva=" + spalva + ", turis=" + turis + ", kiekis=" + kiekis + '}';
+        }
+        
+
 }
