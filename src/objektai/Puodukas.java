@@ -1,10 +1,10 @@
 package objektai;
 
-public class Puodukas {
+public class Puodukas { //paveldetas nuo Object klases
         
         private char spalva;
-        private int turis;
-        private int kiekis;
+        protected int turis;
+        protected int kiekis; //sita savybe bus matoma siai klasei ir paveldetoms klasems
         
 //konstruktorius
         public Puodukas(char spalva, int turis) { //spec tipas metodo, kuris neturi grazinamojo metodo. Pavadinimas turi buti identiskas klases pavadinimui

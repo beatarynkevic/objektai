@@ -26,4 +26,10 @@ public class Termosas extends Puodukas {
         }
         this.temp -= kiek;
     }
+    
+    public void ipilk(int kiek) {
+        super.ipilk(kiek); //nurodymas, kad metodo 'ipilk' ieskoti auksciau stovincioje klaseje, tai yra Puodukas klasejes
+        this.temp -= 5;
+}
+    
 }

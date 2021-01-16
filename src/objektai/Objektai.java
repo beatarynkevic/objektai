@@ -62,11 +62,16 @@ public class Objektai {
 //        System.out.println(t1.getTuris());
         Termosas t1 = new Termosas('b', 1000); //kintamasis i sio tipo
         t1.pasildyk(50);
-        System.out.println(t1.getTemp());
+        System.out.println(t1.getKiekis() + "kiekis");
+        System.out.println(t1.getTemp() + "temp");
+        t1.ipilk(50);
+        System.out.println(t1.getKiekis() + "kiekis");
+        System.out.println(t1.getTemp() + "temp");
         
         Puodukas p4 = new Termosas('R', 1500); //paveldetas. Polimofirzmas
 //        p4.pasildyk(50); neveiks, nes
 
+        //p4 = p1; 
         
         Termosas t2 = (Termosas) p4; //class kasting. Nurodoma, kad i sita objekta ziureti kaip i termosa
         t2.pasildyk(50);
@@ -75,6 +80,22 @@ public class Objektai {
         System.out.println(t1.getTemp());
         System.out.println(t1.getTuris());
         
+        Termosas t3 = new Termosas('g', 500);
+        
+        Puodukas p5 = t3;
+        Object o  = t3; //kintamasis o rodo i objekta
+        
+        if (o instanceof Puodukas) { //operatoriu 'instanceof' sako i ka rodo kintamasis o
+            System.out.println("Puodukas");
+        }
+        
+        Object ob = null; //default reiksme. Kintamasis ob nerodo i joki objekta
+        
+        String a = "Labas pasauli";
+        a = a + " ar tikrai?";      //kintamasis a rodo i nauja objekta
+        System.out.println(a);
     }
+    
+          
     
 }
