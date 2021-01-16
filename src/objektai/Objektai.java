@@ -55,11 +55,25 @@ public class Objektai {
         System.out.println(p2.getKiekis() + " kiekis 2 puoduko");
         System.out.println(p2.getPilnas());
         
-        //Termosas
+        //Termosas  2021-01-14
 //        Termosas t1 = new Termosas('b', 1000);
 // 
 //        System.out.println(t1.getTemp());
 //        System.out.println(t1.getTuris());
+        Termosas t1 = new Termosas('b', 1000); //kintamasis i sio tipo
+        t1.pasildyk(50);
+        System.out.println(t1.getTemp());
+        
+        Puodukas p4 = new Termosas('R', 1500); //paveldetas. Polimofirzmas
+//        p4.pasildyk(50); neveiks, nes
+
+        
+        Termosas t2 = (Termosas) p4; //class kasting. Nurodoma, kad i sita objekta ziureti kaip i termosa
+        t2.pasildyk(50);
+        System.out.println(t2.getTemp());
+        
+        System.out.println(t1.getTemp());
+        System.out.println(t1.getTuris());
         
     }
     

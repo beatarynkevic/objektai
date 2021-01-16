@@ -38,13 +38,18 @@ public class Puodukas {
             if (kiekis + kiek <= turis) { //patikrinam ar tilps
                 kiekis += kiek; //jeigu telpa, pilu
             }
-*/
+*/          if (kiekis <= 0) {
+                return;
+            }
             this.kiekis += kiekis; //this. kintamasis ,kad neieskotu scope, o objekte(klases kintamojo)
             if (this.kiekis > this.turis) {
                 this.kiekis = this.turis;
             }
         }
         public void isgerk(int kiek) { //metodai
+            if (kiek <= 0) {
+                return;
+            }
             kiekis -= kiek;
             if (kiekis < 0) {
                 kiekis = 0;
